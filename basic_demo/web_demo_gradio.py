@@ -42,7 +42,7 @@ TokenizerType = Union[PreTrainedTokenizer, PreTrainedTokenizerFast]
 def parse_args():
     """解析命令行参数"""
     parser = argparse.ArgumentParser(description="运行Gradio界面并加载模型")
-    parser.add_argument('--model_path', type=str, default='output/checkpoint-30000/',
+    parser.add_argument('--model_path', type=str, default='THUDM/chatglm3-6b',
                         help='模型路径')
     return parser.parse_args()
 
